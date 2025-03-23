@@ -39,6 +39,7 @@ export default function GameBoard(props) {
               <li key={colIndex}>
                 <button
                   onClick={() => props.onSelectedSquare(rowIndex, colIndex)}
+                  disabled={playerSymbol !== null}
                 >
                   {playerSymbol}
                 </button>
