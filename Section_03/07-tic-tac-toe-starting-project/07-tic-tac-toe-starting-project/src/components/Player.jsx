@@ -23,7 +23,7 @@ export default function Player(props) {
   }
 
   return (
-    <li>
+    <li className={props.isActive ? "active" : undefined}>
       <span className="player">
         {nameField}
         <span className="player-symbol">{props.symbol}</span>
