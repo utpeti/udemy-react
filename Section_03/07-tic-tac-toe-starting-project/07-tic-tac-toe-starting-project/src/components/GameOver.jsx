@@ -5,7 +5,7 @@ export default function GameOver(props) {
       {props.winner && <p>{props.winner} won!</p>}
       {!props.winner && <p>It's a draw</p>}
       <p>
-        <button>Rematch!</button>
+        <button onClick={props.onRestart}>Rematch!</button>
       </p>
     </div>
   );
