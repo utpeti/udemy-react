@@ -2,10 +2,11 @@ import { useState, useRef } from "react";
 
 export default function Player() {
   const playerNameInput = useRef(); //always a js obj -> current
-  const [playerName, setPlayerName] = useState("");
+  const [playerName, setPlayerName] = useState(null);
 
   function handleClick() {
     setPlayerName(playerNameInput.current.value);
+    //playerNameInput.current.value = ""; not the best thing to do :)
   }
 
   return (
